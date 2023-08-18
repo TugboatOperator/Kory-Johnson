@@ -10,7 +10,9 @@ body{
     width: 100vw;
 
 }
-
+.container{
+    padding: 0;
+}
 .mosaic{
     background-color: rgba(196, 196, 196, 0.301);
     display: grid;

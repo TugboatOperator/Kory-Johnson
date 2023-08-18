@@ -11,10 +11,6 @@ body{
 
 }
 
-.FNLN{
-    font-size: 3rem;
-    margin:0px auto 10px auto;
-}
 .mosaic{
     background-color: rgba(196, 196, 196, 0.301);
     display: grid;
@@ -22,12 +18,9 @@ body{
     grid-auto-rows: 150px;
     padding: 50px 50px 25px 50px;
     max-width: 2000px;
-    width: auto;
+    width:auto;
 }
-.header{
-    width: 999.906px;
-    margin: 0 auto;
-}
+
 .mosaic1{
     grid-column: 3 / span 2 ;
     grid-row: 1 / span 2;
@@ -81,7 +74,6 @@ body{
     left: 74.98px;
 }
 .subtitle{
-    display: flex;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto Mono', monospace;
     color: rgb(161, 161, 161);
@@ -95,21 +87,6 @@ body{
 }
 
 @media (max-width: 1100px) {
-    .FNLN{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        font-size: 2rem;
-        margin: 0px;
-    }
-    .header{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-content: center;
-        margin: 0px;
-        width: 100vw;
-    }
     .mosaic{
         display: grid;
         gap: 16px;
@@ -149,21 +126,17 @@ body{
     }
     .subtitle{
         font-size: .75rem;
-        justify-content: center;
+        text-align: start;
         padding-bottom: 10px;
     }
 }
 @media (min-width: 1440px){
-    .mosaic{
-        width:1440px;
-    }
-    .header{
-        width: 1440px;
-    }
+
     .mosaic3 > button{
         left: 185px;
     }
     .modw{
         max-width: 720px;
     }
+
 }

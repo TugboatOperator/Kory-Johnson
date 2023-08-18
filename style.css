@@ -10,9 +10,7 @@ body{
     width: 100vw;
 
 }
-.container{
-    padding: 0;
-}
+
 .mosaic{
     background-color: rgba(196, 196, 196, 0.301);
     display: grid;
@@ -130,6 +128,9 @@ body{
         font-size: .75rem;
         text-align: start;
         padding-bottom: 10px;
+    }
+    .main .container{
+        padding: 0;
     }
 }
 @media (min-width: 1440px){

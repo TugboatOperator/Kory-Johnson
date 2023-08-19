@@ -8,7 +8,6 @@ body{
     align-items: center;
     margin: 0 auto;
     width: 100vw;
-
 }
 
 .mosaic{
@@ -85,7 +84,44 @@ body{
     height: 3rem;
     border-radius: 0.75rem;
 }
-
+.footer .container{
+    background-color: rgba(196, 196, 196, 0.301);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 75px;
+}
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+.footlist{
+    padding-left: 200px;
+    list-style: none;
+}
+.footlist li{
+    margin: 10px 0px;
+}
+.myface img{
+    margin: 50px 15px 10px 15px;
+    border-radius: 100%;
+}
+.personalphoto ~.centertext{
+    width: 180.906px;
+}
+.centertext{
+    text-align: center;
+}
+.removemargin{
+    margin: 0px;
+}
 @media (max-width: 1100px) {
     .mosaic{
         display: grid;
@@ -130,7 +166,16 @@ body{
         padding-bottom: 10px;
     }
     .main .container{
-        padding: 0;
+    padding: 0px;
+    }
+    .footlist{
+        padding-left: 100px;
+    }
+    .personalphoto{
+        height: 90px;
+    }
+    .personalphoto ~.centertext{
+        width: 120px;
     }
 }
 @media (min-width: 1440px){
@@ -142,4 +187,13 @@ body{
         max-width: 720px;
     }
 
+}
+@media (max-width: 768px){
+    .footer .container{
+        height: 100%;
+        padding: 20px 20px 0px 20px;
+    }
+    .footlist{
+        padding: 0px;
+    }
 }
